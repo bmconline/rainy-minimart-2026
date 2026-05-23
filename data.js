@@ -25,14 +25,14 @@ window.RAINY_DATA = {
     saving:   415804.38, // sum of monthly savings
     investmentNow: 130898.78,
   },
-  // ครัวคงเหลือสด (เงินสด + เงินฝาก) – จาก row 1–6
+  // ยอดคงเหลือแต่ละกระเป๋า – Dashboard sheet (R3 / Y3 / AC4 / AI4)
   balances: {
-    storeDeposit: 170965,    // เงินฝากร้าน
-    storeCash:    154610,    // เงินสดร้าน
-    pracharat:    130898.78, // เงินประชารัฐ (kept)
-    savings:       13854,    // บัญชีเงินฝาก
-    deposit2:      13096,
-    deposit3:      27095.67,
+    storeDeposit: 130898.78, // เงินฝากร้าน  (Dashboard!R3 "รวมเงินฝากร้าน")
+    storeCash:    13854,     // เงินสดร้าน   (Dashboard!Y3 "เงินสดร้านคงเหลือ")
+    pracharat:    13096,     // เงินประชารัฐ (Dashboard!AC4)
+    savings:      27095.67,  // บัญชีเงินฝาก (Dashboard!AI4)
+    deposit2:     0,
+    deposit3:     0,
   },
   // May (current month) transactions
   may: {
